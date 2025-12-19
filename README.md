@@ -21,10 +21,16 @@ Install-module -name terminal-icons -repository PSGallery
 ```
 
 ### Fonts:
+```pwsh
+  oh-my-posh font install Fira Code
+```
+Recomendadas:
+- Hack mono
+- Fira code mono
+- Meslo
+- Jetbrains
 
-- ```pwsh oh-my-posh font install Hack ```
-- ```pswh oh-my-posh font install Meslo ```
-- ```pwsh oh-my-posh font install Fira Code ```
+[more](https://www.nerdfonts.com/)
 
 
 ### VS-code settings:
