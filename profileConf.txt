@@ -15,7 +15,7 @@ Set-PSReadLineOption -Colors @{
 }
 
 
-Set-PSReadLineKeyHandler -Key "Ctrl+h" `
+Set-PSReadLineKeyHandler -Key "Ctrl+f" `
                          -BriefDescription "AlternarVistaPrediccion" `
                          -LongDescription "Cambia entre vista en línea y lista para las predicciones de PSReadLine" `
                          -ScriptBlock {
