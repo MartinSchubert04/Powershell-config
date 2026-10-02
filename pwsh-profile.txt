@@ -49,7 +49,10 @@ Set-PSReadLineKeyHandler -Key "Ctrl+f" `
 }
 
 # --- Fastfetch con config explícita (path corregido) ---
-anifetch "C:\Users\Martin\.config\fastfetch\blackhole.mp4" -W 50 -H 20 -ca "--symbols braille --fg-only" --loop 0
+# En la terminal integrada de VS Code o en una sesión de OpenSSH no se muestra la animación.
+if ($env:TERM_PROGRAM -ne 'vscode' -and -not $env:SSH_CONNECTION) {
+    anifetch "C:\Users\Martin\.config\fastfetch\blackhole.mp4" -W 55 -H 50 -ca "--symbols braille --fg-only" --loop 0 --center
+}
 
 # --- Ir al escritorio si arrancamos en $HOME ---
-if ($pwd.path -eq $HOME) { cd desktop }
+if ($pwd.path -eq $HOME -and $env:TERM_PROGRAM -ne 'vscode') { cd desktop }

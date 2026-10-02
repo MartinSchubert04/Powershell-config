@@ -27,6 +27,16 @@ winget install chafa ffmpeg fastfetch
 pip install anifetch-cli
 ```
 
+La animacion no se ejecuta en la terminal integrada de VS Code ni en sesiones de OpenSSH.
+
+### Windows Terminal
+
+Copiar `windows-terminal/settings.json` a:
+
+```
+%LOCALAPPDATA%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
+```
+
 ### Iconos:
 
 ```pwsh
